@@ -1,0 +1,42 @@
+@import '@vkontakte/vkui-tokens/themes/vkBase/cssVars/declarations/index.css';
+
+:root {
+  --background-color-main: #fefefe;
+  --background-color-secondary: #efefef;
+  --theme-color-main: #a9cdff;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background-color-main);
+}
+
+.button{
+  padding: 8px 12px;
+  font-size: var(--vkui--font_headline1--font_size--regular);
+  border-radius: var(--vkui--size_border_radius--regular);
+  border: var(--vkui--size_border2x--regular) solid var(--vkui--color_field_border_alpha);
+  background-color: var(--vkui--color_text_accent);
+  color: var(--vkui--color_text_contrast);
+  text-decoration: unset;
+  &:hover{
+    cursor: pointer;
+    background-color: var(--vkui--color_background_accent--hover);
+    color: var(--vkui--color_text_contrast--hover);
+  }
+}
+
+.input{
+  height: var(--vkui--size_field_height--compact);
+  border-radius: var(--vkui--size_border_radius--regular);
+  border: .2px solid transparent;
+  border-color: var(--vkui--color_field_border_alpha);
+  outline: 0;
+  color: var(--vkui--color_text_primary);
+  padding: 0 12px;
+  font-size: var(--vkui--font_text--font_size--regular);
+  font-weight: var(--vkui--font_text--font_weight--regular);
+  line-height: var(--vkui--font_text--line_height--regular);
+  background-color: var(--vkui--color_field_background);
+}
